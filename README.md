@@ -1,5 +1,6 @@
 ## Linux-NetSpeed 一键安装BBR原版/BBRplus版/BBR魔改版/LotServer(锐速)版内核的网络加速脚本
 
+![一键安装BBR原版BBRplus版BBR魔改版LotServer(锐速)版内核的网络加速脚本](https://github.com/tudiedie/Linux-NetSpeed/assets/116735322/b3419bc1-1cc0-4348-a302-02ed921b0cc6)
 
 ### 安装wget下载工具，则执行命令：
 ```
