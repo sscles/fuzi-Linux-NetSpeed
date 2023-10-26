@@ -11,9 +11,7 @@ apt-get install wget #Debian/Ubuntu
 ```
 ### 执行一键安装Linux-NetSpeed网络加速脚本命令：
 ```
-wget -N --no-check-certificate "https://raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master/tcp.sh"
-chmod +x tcp.sh
-./tcp.sh
+wget -N --no-check-certificate "https://raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master/tcp.sh" & chmod +x tcp.sh & ./tcp.sh
 ```
 本脚本已不更新，推荐使用5.5以上内核自带的bbr速度最佳
 - BBR/BBRplus/BBR2网络加速效果对比：https://roov.org/2020/03/bbr-bbrplus-bbr2/
