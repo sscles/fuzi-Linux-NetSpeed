@@ -2,7 +2,7 @@
 
 ![一键安装BBR原版BBRplus版BBR魔改版LotServer(锐速)版内核的网络加速脚本](https://github.com/tudiedie/Linux-NetSpeed/assets/116735322/8dd9e921-9bfb-40e5-9e1d-2c0264cad130)
 
-### 执行一键安装脚本的命令：
+### 执行一键安装Linux-NetSpeed网络加速脚本的命令：
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master/tcp.sh"
 chmod +x tcp.sh
