@@ -5,13 +5,13 @@ export PATH
 #=================================================
 #	System Required: CentOS 6+,Debian 8+,Ubuntu 16+
 #	Description: BBR+BBR魔改版+BBRplus+Lotserver
-#	Version: 1.4.0
+#	Version: 1.5.0
 #	Author: 千影,cx9208,TuDieDie
 #	Blog: https://www.tudiedie.com/
 #   推荐使用5.5以上内核直接开启的bbr速度最佳
 #=================================================
 
-sh_ver="1.4.0"
+sh_ver="1.5.0"
 github="raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
