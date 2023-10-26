@@ -11,4 +11,6 @@ chmod +x tcp.sh
 本脚本已不更新，推荐使用5.5以上内核自带的bbr速度最佳
 - BBR/BBRplus/BBR2网络加速效果对比：https://roov.org/2020/03/bbr-bbrplus-bbr2/
 ### 如果以上脚本不能满足您的需求，您还可以使用：
+```
 bash <(curl -Lso- https://git.io/kernel.sh)
+```
