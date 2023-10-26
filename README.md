@@ -2,7 +2,6 @@
 
 ![Uploading 一键安装BBR原版BBRplus版BBR魔改版LotServer(锐速)版内核的网络加速脚本.png…]()
 
-
 ### 安装wget下载工具，则执行命令：
 ```
 yum -y install wget #CentOS/RedHat
