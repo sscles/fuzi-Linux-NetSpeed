@@ -11,7 +11,7 @@ apt-get install wget #Debian/Ubuntu
 ```
 ### 执行一键安装Linux-NetSpeed网络加速脚本命令：
 ```
-wget -N --no-check-certificate "https://raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master/tcp.sh"
+wget -N --no-check-certificate "https://raw.githubusercontent.com/sscles/Linux-NetSpeed/master/tcp.sh"
 chmod +x tcp.sh
 ./tcp.sh
 ```
