@@ -6,13 +6,13 @@ export PATH
 #	System Required: CentOS 6+,Debian 8+,Ubuntu 16+
 #	Description: BBR+BBR魔改版+BBRplus+Lotserver
 #	Version: 1.5.0
-#	Author: 千影,cx9208,TuDieDie
-#	Blog: https://www.tudiedie.com/
+#	Author: 千影,cx9208,夫子
+#	Blog: https://www.fzxyz.cn/
 #   推荐使用5.5以上内核直接开启的bbr速度最佳
 #=================================================
 
 sh_ver="1.5.0"
-github="raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master"
+github="raw.githubusercontent.com/sscles/Linux-NetSpeed/master"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info="${Green_font_prefix}[信息]${Font_color_suffix}"
@@ -174,7 +174,7 @@ startbbrmod_nanqinlang(){
 	if [[ "${release}" == "centos" ]]; then
 		yum install -y make gcc
 		mkdir bbrmod && cd bbrmod
-		wget -N --no-check-certificate https://raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master/bbr/centos/tcp_nanqinlang.c
+		wget -N --no-check-certificate https://raw.githubusercontent.com/sscles/Linux-NetSpeed/master/bbr/centos/tcp_nanqinlang.c
 		echo "obj-m := tcp_nanqinlang.o" > Makefile
 		make -C /lib/modules/$(uname -r)/build M=`pwd` modules CC=/usr/bin/gcc
 		chmod +x ./tcp_nanqinlang.ko
@@ -191,7 +191,7 @@ startbbrmod_nanqinlang(){
 		fi
 		apt-get -y install make gcc-4.9
 		mkdir bbrmod && cd bbrmod
-		wget -N --no-check-certificate https://raw.githubusercontent.com/tudiedie/Linux-NetSpeed/master/bbr/tcp_nanqinlang.c
+		wget -N --no-check-certificate https://raw.githubusercontent.com/sscles/Linux-NetSpeed/master/bbr/tcp_nanqinlang.c
 		echo "obj-m := tcp_nanqinlang.o" > Makefile
 		make -C /lib/modules/$(uname -r)/build M=`pwd` modules CC=/usr/bin/gcc-4.9
 		install tcp_nanqinlang.ko /lib/modules/$(uname -r)/kernel
@@ -215,7 +215,7 @@ startlotserver(){
 		apt-get update
 		apt-get install ethtool
 	fi
-	bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/tudiedie/lotServer/master/Install.sh) install
+	bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/sscles/lotServer/master/Install.sh) install
 	sed -i '/advinacc/d' /appex/etc/config
 	sed -i '/maxmode/d' /appex/etc/config
 	echo -e "advinacc=\"1\"
@@ -335,7 +335,7 @@ Update_Shell(){
 start_menu(){
 clear
 echo && echo -e " TCP加速 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- 土爹爹博客 | www.tudiedie.com --
+  -- 夫子の博客 | WWW.FZXYZ.CN --
   
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
 ————————————内核管理————————————
